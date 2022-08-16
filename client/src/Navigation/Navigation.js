@@ -1,10 +1,19 @@
-import React from 'react'
-import './navigation.css'
+import React,{useState,useEffect} from 'react'
+import axios from 'axios'
 
-export default function Navigation() {
+
+export default function Navigation(props) {
+
+
   return (
     <div>
-      
+        {
+            menuler.map(menu => {
+                return(
+                    <h2>{menu.baslik}</h2>
+                )
+            })
+        }
     </div>
   )
 }

@@ -1,0 +1,24 @@
+.topbar-parent{
+    height:20px;
+    color:#999;
+    margin:0 30px;
+}
+.topbar-nav{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: flex-end;
+}
+.topbar-nav li {
+    list-style: none;
+    margin-right: 20px;
+}
+.nav-item{
+    text-decoration: none;
+    color:#888;
+    font-size: 14px;
+}
+.nav-item:hover{
+    color:coral;
+    
+}

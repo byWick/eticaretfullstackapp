@@ -1,21 +1,28 @@
-import './App.css';
-import axios from "axios";
-import {useState} from "react";
+import React,{useState,Component} from 'react'
+import {BrowserRouter,Routes,Route} from 'react-router-dom'
+import './App.css'
+import Home from './Home/Home';
+import axios from 'axios';
 
 function App() {
-    const [veriler,verileriGetir] = useState(false)
-    axios.post('/get-products/', {
-      name: 'hakan',
-    })
-        .then(function (response) {
-          verileriGetir(response.data)
-        })
-        .catch(function (error) {
-          return error;
-        });
+  const [menuler,setMenuler] = useState(false)
+  axios.post('/getmenu')
+  .then((response) => {
+      setMenuler(response.data)
+  })
+  .catch(error => {
+      console.error(error)
+  })
   return (
-    <div className="App" style={{ padding:"100px",textAlign:'center' }}>
-      
+    <div className="App">
+      <BrowserRouter>
+        <Routes>
+          <Route path='/' element={<Home/>} />
+          <Route path='/siparisim-nerede' element={<Home/>} />
+          <Route path='/yardim' element={<Home/>} />
+          <Route path='/iletisim' element={<Home/>} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }

@@ -1,5 +1,11 @@
+
+@font-face {
+  font-family: 'Sinter';
+  src: url(./Fonts/Fontspring-DEMO-sinter-regular-1.otf);
+}
 *{
   margin:0;
   padding:0;
   box-sizing:border-box;
+  color:black;
 }

@@ -22,9 +22,8 @@ var connection = mysql.createConnection({
 connection.connect()
 
 
-app.post('/get-products/', (req,res) => {
+app.post('/getmenu', (req,res) => {
     connection.query(`SELECT * FROM kategoriler`, (err,kategoriler) => {
-        if(err) throw err;
         res.json(kategoriler)
     })  
 })
