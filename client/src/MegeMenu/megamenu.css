@@ -1,0 +1,11 @@
+.parent-mega{
+    position:absolute;
+    top:30px;
+    left:0;
+    width:100%;
+    min-height: 250px;
+    border:0.4px solid rgba(0,0,0,0.2);
+    border-radius: 6px;
+    z-index:3;
+    box-shadow: 0 3px 3px 0 rgba(0,0,0,0.1);
+}

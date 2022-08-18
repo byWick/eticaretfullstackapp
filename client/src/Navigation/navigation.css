@@ -1,0 +1,172 @@
+.navigation-div-1{
+    display:grid;
+    grid-template-columns: 1.5fr 4fr 3fr;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    margin-top: 30px;
+}
+.logo-text{
+    font-size:53px;
+    margin-left: 40px;
+}
+.search-area{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.search-area input{
+    height: 40px;
+    width: 400px;
+    border:0.5px solid #888;
+    outline:none;
+    padding-left:8px;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    font-size:16px;
+
+}
+.search-area input:focus{
+    outline:none;
+    border:1px solid coral;
+    transition: 0.2s all;
+}
+.search-area button{
+    height: 40px;
+    border:none;
+    padding:0 10px;
+    border-bottom-right-radius: 6px;
+    border-top-right-radius: 6px;
+    background-color: coral;
+    color:white;
+    cursor:pointer;
+    font-size:16px;
+}
+.search-area input::placeholder{
+    padding-left:5px;
+}
+.related-results{
+    position: absolute;
+    width: 100%;
+    left:10px;
+    top:44px;
+    background-color:white;
+    min-height: 200px;
+    z-index: 3;
+    border-radius: 6px;
+    border:0.2px solid #999;
+}
+.user-nav{
+    display:flex;
+    align-items: center;
+    margin-left: 15px;
+}
+.usernav-item{
+    display:flex;
+    align-items: center;
+    margin-right: 30px;
+    list-style-type: none;
+    cursor:pointer;
+}
+.usernav-link{
+    text-decoration: none;
+    display:flex;
+    align-items: center;
+}
+.usernav-item span{
+    font-size:13px;
+    margin-left:3px;
+    margin-bottom: 10px;
+}
+.usernav-text{
+    padding-bottom:3px;
+    margin-left: 4px;
+    font-size:14px;
+}
+
+.usernav-item:hover .usernav-text{
+    color:coral!important;
+}
+.cart-badge{
+    background-color: coral;
+    width:17px;
+    height: 17px;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    color:white;
+    font-weight: bold;
+    border-radius: 50%;
+}
+.navigation-div-2{
+    margin:40px;    
+    position: relative;
+}
+.navigation-div-2 ul{
+    display: flex;
+    align-items: center;
+    border-bottom: 0.2px solid rgba(0,0,0,0.1);
+}
+.navigation-div-2 ul li {
+    list-style-type: none;
+    padding:0 20px;
+    height: 25px;
+    
+}
+.navigation-div-2 ul li:hover{
+    border-bottom:3px solid coral;
+    transition:0.2s all;
+}
+
+.category-link{
+    text-decoration: none;
+    font-size:14px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.parent-mega{
+    position:absolute;
+    top:30px;
+    left:0;
+    width:100%;
+    min-height: 250px;
+    border:0.4px solid rgba(0,0,0,0.2);
+    border-radius: 6px;
+    z-index:3;
+    box-shadow: 0 3px 3px 0 rgba(0,0,0,0.1);
+    padding: 15px;
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+}
+.mid-menu-list{
+    border-bottom: none!important;
+    display:block!important;
+    padding:0;
+    margin-top:6px;
+}
+.mid-menu-title{
+    text-decoration: none;
+    border:none;
+    padding:0 20px;
+    font-size:14px;
+}
+.mid-menu-list li:hover{
+    border:none!important;
+}
+.mid-menu-title:hover{
+    color:coral;
+}
+.sub-menu-title{
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 400;
+}
+.sub-menu-title:hover{
+    text-decoration: underline;
+    color:coral;
+
+}
+.col-parent{
+    text-align: left!important;
+}
